@@ -1,0 +1,95 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{xpatch}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{tikz-cd}
+\usepackage{framed}
+\title{Factoring Pt. 1}
+
+\begin{document}
+	%frame 1%
+	\frame {
+		\titlepage
+	}
+	%frames 2 through 6%
+	\frame {
+		$(x + 2)(x + 3) = x^2 + 3x + 2x + 6$\\
+		\begin{itemize}
+			\item<2-> First
+			\item<3-> Outside
+			\item<4-> Inside
+			\item<5-> Last
+		\end{itemize}
+
+		}
+		%frame 7%
+	\frame{
+		Factor the following polynomial
+		$x^2 + 5x + 6$
+		}
+		%frame 8%
+	\frame{
+		Factor the following polynomial
+		$x^2 + 5x + 6$\\
+		\color{blue}x\\
+		\color{blue}x
+		}
+		%frame 9%
+	\frame{
+		Factor the following polynomial\\
+		$x^2 + 5x + 6$\\
+		$x$ \hspace{1cm}\color{blue}2\\
+		$x$ \hspace{1cm}\color{blue}3
+		}
+		%frame 10%
+	\frame{
+		Factor the following polynomial\\
+		$x^2 + 5x + 6$\\
+		\color{green}x\hspace{1cm}\color{red}2\\
+		\color{red}x\hspace{1cm}\color{green}3\\
+		\color{green}$3x$ + \color{red} $2x = \color{black} 5x$
+		}
+
+	\frame{
+		Factor the following polynomial\\
+		$x^2 + 5x + 6$\\
+		\boxed{\color{green}x \hspace{1cm} \color{red} 2}\\
+		\boxed{\color{red}x \hspace{1cm} \color{green}3}\\
+		\color{green}3x + \color{red} 2x = \color{black} 5x
+		}
+	\frame{	
+		Factor the following polynomial\\
+		$x^2 + 5x + 6 = (x + 2)(x + 3)$\\	
+		}
+	\frame{
+		Factor the following polynomial\\
+		$12x^2 + 17x + 6$
+		}
+		
+	\frame{
+		Factor the following polynomial\\
+		$12x^2 + 17x + 6$\\
+		\begin{framed}
+		$12x$ \pause \hspace{1cm}3\\
+		$1x$ \pause \hspace{1cm}2\\
+		$12x$ $\cdot$ $2 + 3$ $\cdot$ $x = 27x$
+		\end{framed}
+		\begin{framed}
+		$3x$ \pause \hspace{1cm}2\\
+		$4x$ \pause \hspace{1cm}3\\
+		3x $\cdot$ 3 + 2 $\cdot$ 4x = 17x\\
+	
+		\end{framed}
+		}
+	
+	\frame{
+		Factor the following polynomial\\
+		$12x^2 + 17x + 6$\\
+		\boxed{3x \hspace{1cm} 2}\\
+		\boxed{4x \hspace{1cm} 3}\\
+		(3x + 2)(4x + 3)
+		
+		}
+\end{document}

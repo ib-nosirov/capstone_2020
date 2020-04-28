@@ -1,0 +1,45 @@
+\documentclass{beamer} 
+\usepackage{amsmath} 
+\usepackage{xcolor} 
+\usepackage{xpatch} 
+\usepackage{cancel} 
+\usepackage{enumitem} 
+\usepackage{pgfplots}
+\usepackage{framed}
+\title{Zeroes of A Polynomial} 
+\pgfplotsset{width = 10cm, compat = 1.9}
+\usepgfplotslibrary{external}
+\tikzexternalize
+
+
+\begin{document}
+	\frame{
+	\titlepage
+}
+
+	\frame{
+		\input{fig1}
+}
+
+	\frame{
+		\input{fig2}
+}
+	\frame{
+		\input{fig3}
+}
+	\frame{
+		$x^2 - x - 2$ \pause\\
+		$x$ \hspace{1cm} $1$ \pause\\
+		$x$ \hspace{1cm} $-2$ \pause\\
+		$-2x + x = -x$ \pause\\
+		$(x + 1)(x - 2)$
+}
+	\frame{
+		$f(x) = (x + 1)(x - 2) = 0$\pause\\
+		$f(-1) = (-1 + 1)(-1 - 2)$\pause $ = (0)(-3) = 0$\pause\\
+		$f(2) = (2 + 1)(2 - 2)$\pause $ = (3)(0) = 0$\\
+}
+	\frame{
+		\input{fig4}
+}
+\end{document}

@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+\tkzInit[xmax=10,ymax=100,xmin=-10,ymin=-5]
+   \tkzGrid
+   \tkzAxeXY
+\begin{axis}[
+axis lines=middle,
+  axis line style={Stealth-Stealth,very thick},
+  xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+  xtick distance=1,
+  ytick distance=1,
+  xlabel=$x$,
+  ylabel=$y$,
+  title = {$x^2 - x - 2$},
+  grid=major,
+  grid style={thin,densely dotted,black!20}]
+\addplot [Latex-Latex,domain=-5:5,samples=100] {x^2 - x - 2};
+
+\end{axis}
+\end{tikzpicture}
+

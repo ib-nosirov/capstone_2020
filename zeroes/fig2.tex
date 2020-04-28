@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+]
+
+%Single point
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(0,0)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(1,1)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(2,4)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(3,9)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(4,16)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(5,25)};
+\addplot[domain = -10:10, mark = *, color = green] coordinates {(6,36)};
+%red parabola
+\addplot [
+    domain=-10:10,
+    samples=100,
+    color=red,
+]
+{x^2};
+\addlegendentry{$x^2$}
+\end{axis}
+\end{tikzpicture}
+

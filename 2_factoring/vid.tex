@@ -1,0 +1,39 @@
+\documentclass{beamer} 
+\usepackage{amsmath} 
+\usepackage{xcolor} 
+\usepackage{xpatch} 
+\usepackage{cancel} 
+\usepackage{enumitem} 
+\usepackage{pgfplots}
+\usepackage{framed}
+\title{Factoring Pt. 2} 
+\pgfplotsset{width = 10cm, compat = 1.9}
+\usepgfplotslibrary{external}
+\tikzexternalize
+
+
+\begin{document}
+	\frame{
+	\titlepage
+}
+	\frame{
+		examples:\\
+	$x^2 - 1$\\
+	$4x^2 - 9$\\
+	$25x^2 - 49$
+}
+	\frame{
+	Factoring the following polynomial\\
+	$25x^2 - 36$\pause\\
+                $5x$\pause \hspace{1cm} $6$ \pause\\
+                $5x$\pause \hspace{1cm} $-6$ \pause\\
+                $-30x\pause + 30x = 0$ \pause\\
+		$(5x + 6)(5x - 6)$ \pause \hspace{1cm} $(a+b)(a-b)$
+}
+	\frame{
+		In conclusion (some tips)\\
+		\color{green}$25x^2 - 36$ \pause \hspace{1cm} \color{red} $-25x^2 - 36$\pause\\
+		\color{black}$x^2 + x + 1$ \pause \hspace{1cm}will not factor \pause\\
+		$a^2 - 2ab + b^2$ \pause \textbf{must be} $(a-b)^2$
+		}
+\end{document}

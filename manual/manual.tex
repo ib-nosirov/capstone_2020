@@ -1,0 +1,50 @@
+\documentclass{article}[12pt]
+\usepackage{multicol}
+\usepackage{wasysym}
+
+\title{Manual for VIM/Terminal}
+\author{Ibrohim Nosirov}
+\begin{document}
+\maketitle
+
+\section{Terminal/BASH}
+The terminal is in essence, the computer. Here you can do pretty much anything you like, from running inventory on your computer to writing malware to take down the 1\% \smiley{}.
+I don't think we'll go that far with this manual.
+Let's just stick to the basics.\\
+
+\verb|ls|\hspace{1in} lists files\\
+
+\verb|cd|\hspace{1in} go to main directory\\
+
+\verb|cd ..| \hspace{1in}go back one directory\\
+
+\verb|cd [name of directory]|\\ 
+go to the following directory (must be below the directory you are in)\\
+
+\verb|cp [files to be copied] [copy name/target directory/both]|\\
+copies a file to designated location/file name.\\
+Usage might be something like \verb|cp manual.tex Documents/my_manual.tex|, which would create a copy of this document in your \verb|Documents| folder and title it \verb|my_manual.tex|\\
+
+\verb|mv [file name] [new location OR new file name]|\\
+ used to move or rename a file depending on whether you declare a new location or a new file name\\
+
+\verb|mkdir| \hspace{1in} make new directory (aka folder)\\
+
+\verb|vi or vim [file name].[file type]|\\
+opens a file or creates a new file with the entered name. File extensions are important with every command, but especially in VI, if you misspell a file ending like \verb|.jav| instead of \verb|.java|, it will create an empty file that will not run.\\
+
+\verb|rm [file name or directory]| \hspace{1in} removes a file.\\
+
+\section{VIM}
+If terminal is your hand that moves around the workspace, then VIM is your pen used to write documents.\\
+
+\verb|:w| \hspace{1in} `write' or `save' the file.\\
+
+\verb|:q| \hspace{1in} `quit' the file.\\
+
+\verb|:wq| \hspace{1in} `write then quit' the file. One of VI's advantages is in being able to string together commands.\\
+
+\verb|e| \hspace{1in} move to end of next word.\\
+
+\verb|b| \hspace{1in} move to beginning of previous word.\\
+\end{document}
