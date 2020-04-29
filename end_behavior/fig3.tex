@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+]
+%red parabola
+\addplot [
+    domain=-6:6,
+    samples=100,
+    color=red,
+]
+{x*(x - 5)*(x + 5)};
+\addlegendentry{$x^3 - 25x$}
+\end{axis}
+\end{tikzpicture} 

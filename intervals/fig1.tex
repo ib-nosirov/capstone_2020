@@ -1,0 +1,101 @@
+\begin{tikzpicture}
+   \begin{groupplot}[
+        group style = {group size = 2 by 2, vertical sep = 1.1cm, horizontal sep = 2cm},
+        width=0.4\linewidth,
+        height=0.4\linewidth,
+        ]
+
+        \nextgroupplot[
+                title = degree 2,
+                xmin = -10,
+                xmax = 10,
+                ymin = -10,
+                ymax = 100,
+                ymode = linear,
+                clip = false,
+        ]
+        \addplot [
+		domain = -10:10,
+		samples = 100,
+		color = red,
+		]
+	   {x^2};
+	\addplot [
+		domain = -10:10,
+		samples = 100,
+		color = black,
+		 ]
+		{0};
+        
+	   \nextgroupplot[
+                title = degree 3,
+                xmin = -6,
+                xmax = 6,
+                ymin = -65,
+                ymax = 65,
+                ymode = linear,
+                clip = false,
+        ]
+        \addplot [
+		domain = -6:6,
+		samples = 100,
+		color = red,
+		]
+	   {x*(x - 5)*(x + 5)};
+
+	\addplot [
+		domain = -6:6,
+		samples = 100,
+		color = black,
+		 ]
+		{0};
+        
+	   \nextgroupplot[
+                title = degree 4,
+                xmin = -3,
+                xmax = 3,
+                ymin = -3,
+                ymax = 40,
+                ymode = linear,
+                clip = false,
+        ]
+        \addplot [
+		domain = -3:3,
+		samples = 100,
+		color = red,
+		]
+	   {(x - 2)*(x - 1)*(x + 1)*(x + 2)};
+
+	\addplot [
+		domain = -3:3,
+		samples = 100,
+		color = black,
+		 ]
+		{0};
+
+        \nextgroupplot[
+                title = degree 5,
+                xmin = -4,
+                xmax = 4,
+                ymin = -5,
+                ymax = 5,
+                ymode = linear,
+                clip = false,
+        ]
+        \addplot [
+		domain = -4:4,
+		samples = 100,
+		color = red,
+		]
+	   {x-(x^3/6) + x^5 / 120};
+
+	\addplot [
+		domain = -4:4,
+		samples = 100,
+		color = black,
+		 ]
+		{0};
+
+   \end{groupplot}
+\end{tikzpicture}
+

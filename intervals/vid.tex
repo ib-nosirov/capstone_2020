@@ -1,0 +1,51 @@
+\documentclass{beamer} 
+\usepackage{amsmath} 
+\usepackage{xcolor} 
+\usepackage{xpatch} 
+\usepackage{cancel} 
+\usepackage{enumitem} 
+\usepackage{pgfplots}
+\usepackage{framed}
+\title{Positive and Negative Intervals of Polynomials} 
+\pgfplotsset{width = 10cm, compat = 1.9}
+\usepgfplotslibrary{external, groupplots}
+\tikzexternalize
+
+
+\begin{document}
+	\frame{
+	\titlepage
+}
+	\frame{
+		\input{fig1}
+}
+	\frame{
+		\input{fig2}
+		}
+	\frame{
+		$x^3 - 25x$
+		}
+	\frame{
+		$f(x) = x^3 - 25x = 0$\pause\\
+		$x(x^2 - 25) = 0$\pause\\
+		$x \hspace{1cm} 5$\pause\\
+		$x \hspace{1cm} -5$\pause\\
+		$-5x\pause + 5x = 0$\pause\\
+		$x(x + 5)(x - 5) = 0$\pause\\
+		$f(0) = (0)(5)(-5) = 0$\pause\\
+		$f(-5) = (-5)(0)(-10) = 0$\pause\\
+		$f(5) = (5)(10)(0) = 0$\pause\\
+		}
+	\frame{
+		\input{fig3}
+		}
+	\frame{
+		\input{fig4}
+		}
+	\frame{
+		\input{fig5}
+		}
+	\frame{
+		\input{fig6}
+		}
+\end{document}

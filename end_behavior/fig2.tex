@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+]
+%red parabola
+\addplot [
+    domain=-10:10,
+    samples=100,
+    color=red,
+]
+{x^2};
+\addlegendentry{$x^2$}
+\end{axis}
+\end{tikzpicture} 

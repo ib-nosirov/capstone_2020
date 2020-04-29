@@ -1,0 +1,32 @@
+\documentclass{beamer} 
+\usepackage{amsmath} 
+\usepackage{xcolor} 
+\usepackage{xpatch} 
+\usepackage{cancel} 
+\usepackage{enumitem} 
+\usepackage{pgfplots}
+\usepackage{framed}
+\title{End Behavior of Polynomials} 
+\pgfplotsset{width = 10cm, compat = 1.9}
+\usepgfplotslibrary{external, groupplots}
+\tikzexternalize
+
+
+\begin{document}
+	\frame{
+	\titlepage
+}
+	\frame{
+		\input{fig_template}	
+}
+	\frame{
+		\input{fig2}\\\pause
+		$x\rightarrow \infty$ \pause \hspace{1cm} $f(x) \rightarrow \infty$
+		$\hspace{1cm}x\rightarrow -\infty$ \pause \hspace{1cm} $f(x) \rightarrow \infty$
+}
+	\frame{
+		\input{fig3}\\\pause
+		$x\rightarrow \infty$ \pause \hspace{1cm} $f(x) \rightarrow \infty$
+		$\hspace{1cm}x\rightarrow -\infty$ \pause \hspace{1cm} $f(x) \rightarrow -\infty$
+}
+\end{document}
