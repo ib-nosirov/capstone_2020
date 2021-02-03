@@ -1,2 +1,2 @@
 # capstone_2020
-SVA Graduation requirement 2020
+COVID-19 response/aid to Algebra II class at SkyView Academy.
